@@ -1,6 +1,6 @@
 <div align=center>
 
-# *Modality-Free Graph In-Context Alignment*
+# *Modality-Free Graph In-Context Alignment* (ICLR 2026)
 
 </div>
 
