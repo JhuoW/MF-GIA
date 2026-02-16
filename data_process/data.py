@@ -446,11 +446,9 @@ class KGDataset(InMemoryDataset, ABC):
 
     @property
     def raw_file_names(self):
-        # We delegate to Planetoid, so we can leave this empty to force download in process()
         return []
     
     def download(self):
-        # No-op because underlying dataset class will handle its own download in process()
         pass
 
     @property
@@ -505,7 +503,7 @@ class KGDataset(InMemoryDataset, ABC):
         if self.llm_encoder.model is None:
             self.llm_encoder.get_model()
         data_list, texts, side_data = self.gen_data()
-        texts_emb = self.text2feature(texts)  # 所有节点的文本用大模型转为embedding 特征
+        texts_emb = self.text2feature(texts)  
         torch.save(texts, self.processed_paths[1]) 
         if side_data is not None:
             torch.save(side_data, self.processed_paths[2])

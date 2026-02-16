@@ -41,10 +41,6 @@ class UnifiedTaskConstructor:
         return val_task_index_lst, val_pool_mode
 
     def construct_task(self, config):
-        """
-        Datasets in a task are described in config["eval_set_constructs"] that describe the stage (train/valid/test)
-        of the dataset.
-        """
         val_task_index = []
         for stage_config in config["eval_set_constructs"]:
             if "dataset" not in stage_config:

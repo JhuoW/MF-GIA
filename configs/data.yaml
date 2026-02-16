@@ -91,7 +91,7 @@ data_config:
     eval_func: flat_auc
 
   cora: &cora
-    <<: *E2E-node   # 包含了E2E-node的所有配置
+    <<: *E2E-node   
     dataset_name: Cora
     dataset_splitter: CiteSplitter
     process_label_func: process_int_label
