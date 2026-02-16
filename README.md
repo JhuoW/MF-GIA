@@ -227,3 +227,18 @@ python run_ICL_link.py link_cls.dataset=fb15k237 link_cls.k_shot=${k_shot} link_
 # m_way = {5,10}
 python run_ICL_link.py link_cls.dataset=wn18rr link_cls.k_shot=${k_shot} link_cls.m_way=${m_way}
 ```
+
+# Citation
+If you find our work useful, please cite:
+
+```bibtex
+@inproceedings{
+zhuo2026modalityfree,
+title={Modality-free Graph In-context Alignment},
+author={Wei Zhuo and Siqiang Luo},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=cDc95lucVL}
+}
+```
+Feel free to contact jhuow@proton.me if you have any questions.
